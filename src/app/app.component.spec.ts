@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ol-grid'`, () => {
+  it(`should have as title 'grid-projection'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ol-grid');
+    expect(app.title).toEqual('grid-projection');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ol-grid!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to grid-projection!');
   });
 });
